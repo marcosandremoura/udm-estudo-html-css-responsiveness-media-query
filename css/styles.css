@@ -3,3 +3,136 @@
 h1 {
     color: red;
 }
+
+
+
+/* COMO É A SINTAXE */
+
+@media (max-width: 500px) {
+
+    h1 {
+        color: yellow;
+    }
+
+}
+
+
+
+/* MODOS DE SELEÇÃO ESPECIFICO - SCREEN, PRINT, SPEECH, ALL */
+
+@media screen and (max-width: 600px) {
+
+    h2 {
+        color: blue;
+    }
+
+}
+
+@media print and (max-width: 700px) {
+
+    h2 {
+        color: green;
+    }
+
+}
+
+
+
+/* CASO O DESENVOLVIMENTO TENHA SIDO MOBILE FIRST */
+
+@media (min-width: 200px) {
+
+    h3 {
+        color: teal;
+    }
+
+}
+
+
+
+/* USO DO "AND" */
+
+@media (min-width: 300px) and (max-width: 400px) {
+
+    h3 {
+        font-size: 3em;
+    }
+
+}
+
+
+
+/* ORIENTATION */
+
+@media (orientation: landscape) {
+
+    h4 {
+        color: brown;
+    }
+
+}
+
+
+
+/* USO DO "OR" */
+
+@media (max-width: 200px), (orientation: landscape) {
+
+    h4 {
+        font-size: 3em;
+    }
+
+}
+
+
+
+/* BREAKPOINTS */
+
+h5 {
+    color: aqua;
+    font-size: 2em;
+}
+
+
+/* 480px - 768px (TABLET) */
+@media (min-width: 480px) {
+    h5 {
+        color: burlywood;
+    }
+}
+
+
+/* 768px - 1024px (TELAS MENORES / LAPTOPS) */
+@media (min-width: 768px) {
+    h5 {
+        color: cadetblue;
+    }
+}
+
+
+/* 1024px - 1200px (DESKTOP) */
+@media (min-width: 1024px) {
+    h5 {
+        color: coral;
+    }
+}
+
+
+/* 1200px - ++ (TELAS MAIORES, TELAS WILDSCREEN, TELAS CURVAS, TVS) */
+@media (min-width: 1200px) {
+    h5 {
+        color: darkorchid;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
